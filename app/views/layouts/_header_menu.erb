@@ -1,0 +1,10 @@
+<div class="header_menu" id="menu">
+  <nav>
+    <ul>
+      <li><%= link_to "Inicio", root_path, class: ("selected" if yield(:pageIn) == 'H') %></li>
+      <li><%= link_to "Servicios", services_path, class: ("selected" if yield(:pageIn) == 'S') %></li>
+      <li><%= link_to "Contacto", contact_us_path, class: ("selected" if yield(:pageIn) == 'C') %></li>
+      <li><%= link_to "Acerca de DOES", about_us_path, class: ("selected" if yield(:pageIn) == 'A') %></li>
+    </ul>
+  </nav>
+</div>

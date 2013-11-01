@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Does</title>
+  <meta charset="UTF-8">
+  <title>Does Inmuebles</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="fixbody">
+<header>
+  <div class="header" id="header">
+    <div class="header_logo" id="header_logo">
+      <p><%= image_tag("does_single.png", alt: 'Does Inmuebles', size: "196x125", id: "logo", name: "logo", class: "logo") %>
+    </div>
 
-<%= yield %>
+    <%= render 'layouts/header_menu' %>
+  </div>
 
+  <%= render 'layouts/submenu', object: yield(:options) %>
+
+  <%= render 'layouts/shim' %>
+</header>
+<section class="content">
+  <%= yield %>
+</section>
+<%= render 'layouts/footer' %>
 </body>
 </html>
