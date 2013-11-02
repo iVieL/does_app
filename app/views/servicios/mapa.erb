@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+  <script type="text/javascript">
+    function initialize() {
+      var myLatlng = new google.maps.LatLng(14.364818, -90.362465);
+      var myOptions = {
+        center: myLatlng,
+        zoom: 17,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+      };
+      var map = new google.maps.Map(document.getElementById("mapa"), myOptions);
+
+      var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'Ubicacion'
+      });
+    }
+  </script>
+</head>
+
+<body onLoad="initialize()">
+<div id="mapa" style=" width:580px; height:480px;">
+</div>
+</body>
+</html>

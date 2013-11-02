@@ -1,3 +1,15 @@
 <% provide(:pageIn, 'C') %>
-<h1>Contacto</h1>
-<p>Agregar contactos aqui</p>
+<h1>Contáctenos</h1>
+<p>Si desea hacer una consulta o comentario llene este formulario y con gusto le responderemos</p>
+
+<%= form_tag dispatch_email_path, method: :post do %>
+  <%= label_tag "forma[nombre]", "Nombre" %><br/>
+  <%= text_field_tag "forma[nombre]" %><br />
+  <%= label_tag "forma[email]", "Email" %><br/>
+  <%= text_field_tag "forma[email]" %><br />
+  <%= label_tag "forma[telefono]", "Teléfono" %><br/>
+  <%= text_field_tag "forma[telefono]" %><br />
+  <%= label_tag "forma[mensaje]", "Mensaje" %><br/>
+  <%= text_area_tag "forma[mensaje]", "", size: "60x10" %><br/>
+  <%= submit_tag "Enviar" %>
+<% end %>

@@ -1,0 +1,64 @@
+<%= render 'servicios/header_option' %>
+<h1>Ventas</h1>
+
+<div class="nav_section">
+  <h3>Ubicación</h3>
+  <ul>
+    <li><%= link_to 'Capital', '#' %></li>
+    <li><%= link_to 'Mixco', '#' %></li>
+    <li><%= link_to 'Chimaltenago', '#' %></li>
+    <li><%= link_to 'Escuintla', '#' %></li>
+  </ul>
+</div>
+
+<div class="subseccion">
+  <table style='width: 100%; border: 1px solid;' rules="all">
+    <th style='width: 50%;'>Dirección</th>
+    <th style='width: 20%;'>Dimensiones</th>
+    <th style='width: 15%;'>Galeria</th>
+    <th style='width: 15%;'>Mapa</th>
+    <tr>
+      <td>
+        Lote de 474.43 VRAS2, SECTOR A-4 LOMA REAL
+      </td>
+      <td>
+        13 mts frente, 25.50 mts fondo.
+      </td>
+      <td>
+        <%= link_to 'imagenes', '#' %>
+      </td>
+      <td>
+        <%= link_to image_tag('google-map-icon.jpg', alt: 'Ver Mapa', size: '30x23'), 'https://maps.google.com/maps/ms?msid=206309897415733935074.00044cbb1b59ed966f70f&msa=0&ll=14.656607,-90.51375&spn=0.006186,0.008111', target: '_blank' %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        TERRENO DE ESQUINA  SECTOR A-3, SAN CRISTOBAL
+      </td>
+      <td>
+        1,623.75 mts.2  Con Área en varas de: 2,323.83 vrs.2 Frente y Fondo de: 39 x 50 aprox.
+      </td>
+      <td>
+        <%= link_to 'imagenes', '#' %>
+      </td>
+      <td>
+        <%= link_to image_tag('google-map-icon.jpg', alt: 'Ver Mapa', size: '30x23'), 'https://maps.google.com/maps/ms?msid=206309897415733935074.00044cbb1b59ed966f70f&msa=0&ll=14.656607,-90.51375&spn=0.006186,0.008111', target: '_blank' %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        BALCONES DE SAN CRISTOBAL
+      </td>
+      <td>
+        25 METROS DE FRENTE POR 60 METROS  DE LARGO
+      </td>
+      <td>
+        <%= link_to 'imagenes', '#' %>
+      </td>
+      <td>
+        <%= link_to image_tag('google-map-icon.jpg', alt: 'Ver Mapa', size: '30x23'), 'https://maps.google.com/maps/ms?msid=206309897415733935074.00044cbb1b59ed966f70f&msa=0&ll=14.656607,-90.51375&spn=0.006186,0.008111', target: '_blank' %>
+      </td>
+    </tr>
+  </table>
+</div>
+
