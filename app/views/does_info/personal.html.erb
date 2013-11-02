@@ -1,2 +1,26 @@
-<h1>DoesInfo#personal</h1>
-<p>Find me in app/views/does_info/personal.html.erb</p>
+<%= render 'does_info/header_option' %>
+<h1>Nuestro Equipo</h1>
+<section>
+  <div id="personal">
+    <ul>
+    <% @personal.each do |p| %>
+      <li>
+        <div class="nombre_persona">
+          <p><%= p.primer_nombre + ' ' + p.primer_apellido %></p>
+        </div>
+        <div class="cargo_persona">
+          <p><%= p.cargo %></p>
+        </div>
+        <div class="telefono_persona">
+          <h3>Teléfonos:</h3>
+          <p><%= p.telefono_personal.blank? ? p.telefono_trabajo: p.telefono_trabajo + ', ' + p.telefono_personal %></p>
+        </div>
+        <div class="email_persona">
+          <h3>e-mail:</h3>
+          <p><%= p.email_personal.blank? ? p.email_trabajo: p.email_trabajo + ', ' + p.email_personal %></p>
+        </div>
+      </li>
+    <% end %>
+    </ul>
+  </div>
+</section>

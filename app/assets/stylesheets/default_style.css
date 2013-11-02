@@ -216,5 +216,74 @@ rgba(174, 209, 55, 0.3)
 /* Contenido principal para cada pagina */
 
 .content {
-    min-height: 400px;
+    min-height: 500px;
+    overflow: scroll;
+}
+
+/* about us */
+
+#personal {
+    border: 1px solid darkgreen;
+    margin: 25px 25px 25px 25px;
+    background-color: rgba(156, 201, 42, 0.1);
+}
+
+#personal ul {
+    padding: 25px;
+    margin: 25px;
+    display: block;
+}
+
+#personal ul li {
+    border-left: 1px solid darkgreen;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 10px;
+    display: block;
+}
+
+#personal ul li div, #personal ul li div p, #personal ul li div h3 {
+    margin: 0;
+    padding: 0;
+}
+
+#personal ul li div h3 {
+    text-decoration: underline;
+    font-variant: small-caps;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.1em;
+}
+
+.nombre_persona {
+    font-size: 1.2em;
+    font-weight: bolder;
+    font-style: italic;
+    font-variant: small-caps;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.cargo_persona {
+    font-size: 0.7em;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.telefono_persona {
+    font-size: 0.8em;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.email_persona {
+    font-size: 0.8em;
+    font-weight: lighter;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }

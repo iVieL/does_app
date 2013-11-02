@@ -1,2 +1,13 @@
-<h1>DoesInfo#calidad</h1>
-<p>Find me in app/views/does_info/calidad.html.erb</p>
+<%= render 'does_info/header_option' %>
+<h1>Nuestra politica de Calidad</h1>
+<% @calidad.each do |polica| %>
+  <section>
+    <h3><%= polica['tipo'].capitalize %></h3>
+    <% parafos = polica['descripcion'].split('\n') %>
+    <ul>
+    <% parafos.each do |parafo| %>
+      <li><%= parafo %></li>
+    <% end %>
+    </ul>
+  </section>
+<% end %>
