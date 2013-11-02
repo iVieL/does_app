@@ -5,10 +5,10 @@ rgba(174, 209, 55, 0.3)
 */
 
 .header_logo {
-	margin: 0px;
+	margin: 0;
 	top: 9px;
 	right: -25px;
-	padding: 0em;
+	padding: 0;
 	height: 125px;
 	width: 196px;
 	position: relative;
@@ -18,24 +18,24 @@ rgba(174, 209, 55, 0.3)
 	background-color: #F60;
 	height: 150px;
 	width: 100%;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	position: relative;
-	top: 0px;
-	right: 0px;
+	top: 0;
+	right: 0;
 	overflow: visible;
 	display: block;
 }
 .logo {
 	position: relative;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	height: 125px;
 	width: 196px;
 	visibility: visible;
 }
 #menu {
-	margin: 0px;
+	margin: 0;
 	display: inherit;
 	position: relative;
 	bottom: -118px;
@@ -48,7 +48,7 @@ rgba(174, 209, 55, 0.3)
 	letter-spacing: -0.1em;
 	font-weight: bold;
 	float: right;
-	padding: 0px;
+	padding: 0;
 	overflow: visible;
 	z-index: 100;
 }
@@ -62,12 +62,12 @@ rgba(174, 209, 55, 0.3)
 	text-align: center;
 	width: 111px;
 	display: block;
-	margin: 0px;
+	margin: 0;
 	padding-top: 10px;
 	height: 21px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
 	border-top-width: 1px;
 	border-right-width: 1px;
 	border-bottom-width: 2px;
@@ -105,16 +105,15 @@ rgba(174, 209, 55, 0.3)
 	overflow: visible;
 }
 #menu ul {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	list-style-type: none;
 	overflow: visible;
 }
+
 .sub-menu {
-	display: block;
-	margin: 0px;
-	padding: 0px;
-	position: relative;
+	margin: 0;
+	padding: 0;
 	border-top-width: 2px;
 	border-top-style: solid;
 	border-top-color: #14783F;
@@ -123,13 +122,19 @@ rgba(174, 209, 55, 0.3)
 	border-left-color: #14783F;
 	height: 35px;
 	width: 100%;
-	text-align: center;
+}
+
+#sub-menu-opts {
+    text-align: center;
+    float: right;
+	padding: 0;
 	vertical-align: middle;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .sub-menu, .selected {
 	background-color: rgb(253,114,17);
-	//background-color: rgba(174, 209, 55, 0.6)
 }
 
 .selected {
@@ -150,22 +155,59 @@ rgba(174, 209, 55, 0.3)
 	border-bottom-color: #0033FF;
 	border-left-color: #14793B;
 }
+
+#sub-menu-opts a {
+    color: #AFD23A;
+    font-size: 0.8em;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 150px;
+    display: block;
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    overflow: visible;
+}
+
+#sub-menu-opts a:hover {
+    color: #14783C;
+    overflow: visible;
+}
+
+#sub-menu-opts ul li {
+    float: left;
+    overflow: visible;
+}
+#sub-menu-opts ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: visible;
+}
+
+
+
 .fixbody {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 #footer {
 	background-color: #F60;
 	text-align: center;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 #footer p {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	text-decoration: none;
 	vertical-align: middle;
-	margin: 0px;
+	margin: 0;
 	padding: 5px;
 	color: #14783F;
 	font-weight: bold;
